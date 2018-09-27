@@ -1,10 +1,10 @@
 require 'pry'
 
-def hello(array)
-  i = 0
+def hello(array) #calls an argument of an array
+  x = 0 #sets index at 0
   collection = []
   while i < array.length
-    collection << yield(array[i])
+    collection << yield(array[x])
     i += 1
   end
   collection
